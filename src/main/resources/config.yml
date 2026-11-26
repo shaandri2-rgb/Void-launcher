@@ -26,6 +26,8 @@ messages:
   not-logged-in: "&cLog in first using &e/alogin <key>&c."
   login-success: "&aStaff login successful: &e%grade% &7(%name%)."
   login-failed: "&cInvalid key."
+  login-locked: "&cToo many failed attempts. Try again later."
+  session-expired: "&eYour staff session expired. Use /alogin <key> again."
   key-changed: "&aYour staff key has been changed."
   spectate-start: "&aNow spectating &e%player%&a. Use &e/re &ato stop."
   spectate-stop: "&eYou stopped spectating."
