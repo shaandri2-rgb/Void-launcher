@@ -1,0 +1,17 @@
+name: VOIDRanks
+version: 1.0.0
+main: com.voidsmp.voidranks.VOIDRanks
+api-version: '1.21'
+author: VOID SMP
+description: VOID SMP native ranks, staff login, permissions and spectating.
+commands:
+  alogin: {description: Log in to staff system, usage: /alogin <key>}
+  achange: {description: Change your staff key, usage: /achange <new-key>}
+  agrade: {description: Owner assigns staff grades, usage: /agrade <player> <1-12>}
+  makeadmin: {description: Manager/Dev creates a Helper, usage: /makeadmin <player>}
+  re: {description: Spectate a player or stop spectating, usage: /re [player]}
+  vrank: {description: View rank info, usage: /vrank <list|info|reload>}
+permissions:
+  voidranks.admin:
+    description: Console/operator emergency config reload.
+    default: op
