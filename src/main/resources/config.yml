@@ -1,0 +1,31 @@
+settings:
+  session-timeout-minutes: 60
+  login-max-attempts: 5
+  login-lockout-seconds: 60
+  initial-owner-key-length: 5
+
+# Grade 0 is the default Member. Staff grades 1-12 require /alogin.
+# External plugin permissions should be added only after checking your exact plugin versions.
+grades:
+  0: {name: "Member", prefix: "&7[Member]", permissions: []}
+  1: {name: "Helper", prefix: "&a[Helper]", permissions: ["essentials.help","essentials.msg","essentials.reply","essentials.spawn"]}
+  2: {name: "Junior Moderator", prefix: "&2[Junior Mod]", permissions: ["essentials.help","essentials.msg","essentials.reply","essentials.spawn"]}
+  3: {name: "Moderator", prefix: "&9[Moderator]", permissions: ["essentials.help","essentials.msg","essentials.reply"]}
+  4: {name: "Junior Administrator", prefix: "&3[Junior Admin]", permissions: []}
+  5: {name: "Administrator", prefix: "&b[Administrator]", permissions: []}
+  6: {name: "Curator", prefix: "&d[Curator]", permissions: []}
+  7: {name: "Creator", prefix: "&5[Creator]", permissions: []}
+  8: {name: "Deputy Manager", prefix: "&6[Deputy Manager]", permissions: []}
+  9: {name: "Manager", prefix: "&c[Manager]", permissions: []}
+  10: {name: "Dev", prefix: "&c[Dev]", permissions: []}
+  11: {name: "CEO", prefix: "&4[CEO]", permissions: []}
+  12: {name: "Owner", prefix: "&4&l[OWNER]", permissions: []}
+
+messages:
+  no-permission: "&cYou do not have permission."
+  not-logged-in: "&cLog in first using &e/alogin <key>&c."
+  login-success: "&aStaff login successful: &e%grade% &7(%name%)."
+  login-failed: "&cInvalid key."
+  key-changed: "&aYour staff key has been changed."
+  spectate-start: "&aNow spectating &e%player%&a. Use &e/re &ato stop."
+  spectate-stop: "&eYou stopped spectating."
